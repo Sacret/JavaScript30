@@ -4,9 +4,17 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
 .main {
   width: 700px;
   margin: auto;
+  flex: 1;
 }
 
 .main__title {
@@ -14,7 +22,37 @@ html, body {
   text-align: center;
 }
 
+.main__back-btn {
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+  display: inline-block;
+
+  line-height: 34px;
+  text-decoration: none;
+  color: #fff;
+  background: #000;
+  border-radius: 50%;
+}
+
 .main__description {
   line-height: 22px;
   text-align: center;
+}
+
+
+.footer {
+  height: 50px;
+
+  background: #222;
+  color: #fff;
+}
+
+.footer__inner {
+  height: 50px;
+  width: 700px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
