@@ -2,6 +2,10 @@ const secondHand = document.querySelector('.clock__hand--second');
 const minuteHand = document.querySelector('.clock__hand--minute');
 const hourHand = document.querySelector('.clock__hand--hour');
 
+function setTransform(elem, degrees) {
+  elem.style.transform = `rotate(${degrees}deg)`;
+}
+
 function setDate() {
   const now = new Date();
 
@@ -13,9 +17,9 @@ function setDate() {
   const minutesDegrees = (minutes / 60 * 360) + 90;
   const hoursDegrees = (hours / 12 * 360) + 90;
 
-  secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
-  minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
-  hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+  setTransform(secondHand, secondsDegrees);
+  setTransform(minuteHand, minutesDegrees);
+  setTransform(hourHand, hoursDegrees);
 
   const initialClass = 'clock__hand--initial';
   if (secondHand.classList.contains(initialClass)) {
@@ -28,3 +32,4 @@ function setDate() {
 }
 
 setInterval(setDate, 1000);
+setDate();
