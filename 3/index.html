@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Playing with CSS Variables and JS</title>
+  <link href="../index.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+</head>
+
+<body class="container">
+  <div class="main">
+    <h1 class="main__title">
+      <a href="../index.html" class="main__back-btn">←</a>
+      Playing with CSS Variables and JS
+    </h1>
+    <p class="main__description">
+      We are going to change CSS vars (like --spacing, --blur, --base) using JavaScript.
+    </p>
+
+    <div class="vars">
+      <div>Let's update this image using <span class="vars__highlight">JS</span></div>
+      <div class="vars__controls">
+        <label for="spacing">Spacing:</label>
+        <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+        <label for="blur">Blur:</label>
+        <input type="range" name="blur" min="0" max="25" value="5" data-sizing="px">
+
+        <label for="base">Base Color</label>
+        <input type="color" name="base" value="#ffc600">
+      </div>
+
+      <img src="https://avatars1.githubusercontent.com/u/1748823?v=3&s=460" class="vars__image">
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>Check out my <a href="https://github.com/Sacret">GitHub</a>
+      and <a href="https://twitter.com/Sacret19">Twitter</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
