@@ -81,7 +81,7 @@
 }
 
 .clock__section--12oclock {
-  height: 30px;
+  height: 20px;
   width: 1px;
   top: 5px;
   left: 50%;
@@ -89,13 +89,13 @@
 
 .clock__section--3oclock {
   height: 1px;
-  width: 30px;
+  width: 20px;
   right: 5px;
   top: 50%;
 }
 
 .clock__section--6oclock {
-  height: 30px;
+  height: 20px;
   width: 1px;
   bottom: 5px;
   left: 50%;
@@ -103,7 +103,7 @@
 
 .clock__section--9oclock {
   height: 1px;
-  width: 30px;
+  width: 20px;
   left: 5px;
   top: 50%;
 }
