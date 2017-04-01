@@ -1,0 +1,20 @@
+html {
+  color: #000;
+}
+
+body {
+  margin: 0;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.hero h1 {
+  text-shadow: 10px 10px 0 rgba(0,0,0,1);
+  font-size: 100px;
+}
