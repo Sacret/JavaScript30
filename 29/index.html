@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Countdown Clock</title>
+  <link href="../index.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+</head>
+
+<body class="container">
+  <div class="main">
+    <h1 class="main__title">
+      <a href="../index.html" class="main__back-btn">←</a>
+      Countdown Clock
+    </h1>
+
+    <p class="main__description">
+      We are going to create some nice timers
+    </p>
+
+    <div class="timer">
+      <div class="timer__controls">
+        <button data-time="20" class="timer__button">20 Secs</button>
+        <button data-time="300" class="timer__button">Work 5</button>
+        <button data-time="900" class="timer__button">Quick 15</button>
+        <button data-time="1200" class="timer__button">Snack 20</button>
+        <button data-time="3600" class="timer__button">Lunch Break</button>
+        <form name="customForm" id="custom">
+          <input type="text" name="minutes" placeholder="Enter Minutes">
+        </form>
+      </div>
+      <div class="display">
+        <h1 class="display__time-left"></h1>
+        <p class="display__end-time"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>Check out my
+        <a href="https://github.com/Sacret">GitHub</a>
+        and
+        <a href="https://twitter.com/Sacret19">Twitter</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
